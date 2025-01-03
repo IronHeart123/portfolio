@@ -1,4 +1,8 @@
 <?php
+header("Access-Control-Allow-Origin: https://ironheart123.github.io/portfolio/");
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");  // Allow specific methods
+header("Access-Control-Allow-Headers: Content-Type");  // Allow specific headers
+
 if(empty($_POST['name']) || empty($_POST['subject']) || empty($_POST['message']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
   http_response_code(500);
   exit();
