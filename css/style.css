@@ -164,6 +164,9 @@ h6 {
 .navbar .navbar-brand {
   font-size: 2rem;
   letter-spacing: 0.22rem;
+  color: #ffffff;
+  font-weight: 800;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
 .navbar.nav-sticky {
@@ -172,6 +175,7 @@ h6 {
 
 .navbar.nav-sticky .navbar-brand {
   color: #d92b4d;
+  text-shadow: none;
 }
 
 .navbar.nav-sticky .navbar-nav .nav-link {
