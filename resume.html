@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark Andrei G. Quintana | Resume</title>
+    <style>
+      :root {
+        --bg: #f6f7fb;
+        --paper: #ffffff;
+        --text: #1d2433;
+        --muted: #58657a;
+        --accent: #d92b4d;
+        --accent-soft: #fce9ee;
+        --border: #e8ebf1;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      .page {
+        max-width: 980px;
+        margin: 40px auto;
+        background: var(--paper);
+        border: 1px solid var(--border);
+        box-shadow: 0 12px 35px rgba(20, 30, 50, 0.08);
+      }
+      .topbar {
+        background: linear-gradient(135deg, #111827, #1f2937);
+        color: #fff;
+        padding: 28px 38px;
+      }
+      .name {
+        margin: 0;
+        font-size: 36px;
+        letter-spacing: 0.04em;
+      }
+      .role {
+        margin: 8px 0 0;
+        color: #dfe7f4;
+        font-size: 17px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      .content {
+        padding: 30px 38px 42px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 32px;
+      }
+      .section {
+        margin-bottom: 28px;
+      }
+      .section-title {
+        margin: 0 0 12px;
+        color: var(--accent);
+        font-size: 18px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        border-bottom: 2px solid var(--accent-soft);
+        padding-bottom: 8px;
+      }
+      p, li {
+        color: var(--text);
+        line-height: 1.7;
+        font-size: 15px;
+      }
+      ul {
+        margin: 0;
+        padding-left: 22px;
+      }
+      .meta {
+        background: var(--accent-soft);
+        border-left: 4px solid var(--accent);
+        padding: 16px 18px;
+        margin-bottom: 20px;
+      }
+      .meta p {
+        margin: 6px 0;
+      }
+      .job {
+        margin-bottom: 22px;
+      }
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 16px;
+        margin-bottom: 4px;
+      }
+      .job-title {
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+      }
+      .job-company {
+        font-size: 15px;
+        color: var(--muted);
+        margin: 0;
+      }
+      .job-date {
+        font-size: 14px;
+        color: var(--muted);
+        white-space: nowrap;
+      }
+      .tag {
+        display: inline-block;
+        margin: 4px 6px 4px 0;
+        padding: 6px 10px;
+        border-radius: 999px;
+        background: var(--bg);
+        color: var(--text);
+        border: 1px solid var(--border);
+        font-size: 12px;
+      }
+      .actions {
+        margin-top: 26px;
+      }
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 12px 18px;
+        background: var(--accent);
+        color: white;
+        border-radius: 8px;
+        font-weight: 600;
+      }
+      @media (max-width: 760px) {
+        .grid { grid-template-columns: 1fr; }
+        .name { font-size: 28px; }
+        .topbar, .content { padding-left: 22px; padding-right: 22px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="topbar">
+        <h1 class="name">Mark Andrei G. Quintana</h1>
+        <p class="role">AI Software Architect & Full-Stack Developer</p>
+      </div>
+
+      <div class="content">
+        <div class="meta">
+          <p><strong>Email:</strong> markandrei45@gmail.com</p>
+          <p><strong>Phone:</strong> +63 915 358 8742</p>
+          <p><strong>Location:</strong> Candelaria, Quezon, Philippines</p>
+          <p><strong>LinkedIn:</strong> linkedin.com/in/mark-andrei-quintana-9247a7148</p>
+        </div>
+
+        <div class="section">
+          <h2 class="section-title">Profile</h2>
+          <p>
+            AI-focused Software Architect and Full Stack Developer with 10+ years of experience
+            delivering scalable web applications, enterprise systems, and cloud-powered solutions.
+            I work across modern frontend frameworks, backend architecture, API integration, system
+            modernization, and AI-driven automation for enterprise clients.
+          </p>
+        </div>
+
+        <div class="grid">
+          <div>
+            <div class="section">
+              <h2 class="section-title">Experience</h2>
+
+              <div class="job">
+                <div class="job-header">
+                  <div>
+                    <p class="job-title">AI Software Architect</p>
+                    <p class="job-company">Concentrix Inc. - Manila, Philippines</p>
+                  </div>
+                  <span class="job-date">2026 - Present</span>
+                </div>
+                <ul>
+                  <li>Lead the architecture and delivery of enterprise applications and AI-driven solutions for Google clients.</li>
+                  <li>Use Angular, Java, Python, Google Cloud, APIs, and distributed systems to design resilient solutions.</li>
+                  <li>Guide technical governance, architecture reviews, performance optimization, and engineering mentorship.</li>
+                </ul>
+              </div>
+
+              <div class="job">
+                <div class="job-header">
+                  <div>
+                    <p class="job-title">Professional Software Engineer</p>
+                    <p class="job-company">ERNI Philippines - Mandaluyong City, NCR</p>
+                  </div>
+                  <span class="job-date">2024 - 2025</span>
+                </div>
+                <ul>
+                  <li>Built adaptable web applications using Next.js, Angular, APIs, and cloud-based services.</li>
+                  <li>Collaborated with cross-functional teams on product delivery and digital transformation work.</li>
+                  <li>Improved performance, maintainability, and deployment quality in enterprise environments.</li>
+                </ul>
+              </div>
+
+              <div class="job">
+                <div class="job-header">
+                  <div>
+                    <p class="job-title">Packaged App Development Analyst</p>
+                    <p class="job-company">Accenture, Inc. - Mandaluyong City, NCR</p>
+                  </div>
+                  <span class="job-date">2022 - 2024</span>
+                </div>
+                <ul>
+                  <li>Developed web applications and reusable UI components for enterprise client work.</li>
+                  <li>Resolved bugs, improved localization support, and supported integration testing and release quality.</li>
+                  <li>Worked with global and multicultural teams to maintain consistent delivery standards.</li>
+                </ul>
+              </div>
+
+              <div class="job">
+                <div class="job-header">
+                  <div>
+                    <p class="job-title">Full Stack Developer</p>
+                    <p class="job-company">LGU Candelaria - Candelaria, Quezon</p>
+                  </div>
+                  <span class="job-date">2017 - 2022</span>
+                </div>
+                <ul>
+                  <li>Delivered full-stack solutions using JavaScript, TypeScript, React, Next.js, Angular, Node.js, PHP, Go, and SQL.</li>
+                  <li>Maintained Drupal and eCommerce systems while supporting digital service modernization.</li>
+                  <li>Built automation and workflow tools to improve operational efficiency and user experience.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="section">
+              <h2 class="section-title">Skills</h2>
+              <span class="tag">React</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Angular</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Python</span>
+              <span class="tag">Java</span>
+              <span class="tag">PHP</span>
+              <span class="tag">Go</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Google Cloud</span>
+              <span class="tag">Azure</span>
+              <span class="tag">APIs</span>
+              <span class="tag">System Design</span>
+              <span class="tag">AI Integration</span>
+            </div>
+
+            <div class="section">
+              <h2 class="section-title">Core Strengths</h2>
+              <ul>
+                <li>Full-stack product development</li>
+                <li>Enterprise architecture</li>
+                <li>Cloud and API integration</li>
+                <li>Technical leadership</li>
+                <li>AI-driven automation strategies</li>
+                <li>Performance and UX optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <a class="btn" href="index.html">Back to Portfolio</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
