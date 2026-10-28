@@ -1,11 +1,23 @@
 
-
 /*******************************/
 /******** Second Pass CSS ******/
 /*******************************/
+html {
+  background: #f4f7fb;
+}
+
 body {
   background: #f4f7fb;
-  color: #475569;
+  color: #334155;
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+li,
+span,
+small,
+label {
+  color: inherit;
 }
 
 h1,
@@ -79,10 +91,31 @@ h6 {
 }
 
 .hero .typed-text {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.84);
   font-size: 1.1rem;
   letter-spacing: 0.02rem;
   max-width: 40rem;
+  line-height: 1.7;
+}
+
+.hero .hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 0 24px;
+}
+
+.hero .hero-image img {
+  display: block;
+  width: min(100%, 420px);
+  max-width: 420px;
+  height: auto;
+  object-fit: cover;
+  margin-left: auto;
+  border-radius: 28px;
+  box-shadow: 0 28px 45px rgba(15, 23, 42, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .hero .hero-btn {
@@ -102,6 +135,7 @@ h6 {
   font-weight: 700;
   letter-spacing: 0.08rem;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 .hero .btn:hover,
@@ -110,15 +144,6 @@ h6 {
   background: transparent;
   border-color: rgba(255, 255, 255, 0.85);
   box-shadow: none;
-}
-
-.hero-image img {
-  width: 100%;
-  max-width: 560px;
-  margin-left: auto;
-  border-radius: 28px;
-  box-shadow: 0 28px 45px rgba(15, 23, 42, 0.35);
-  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .navbar {
@@ -161,6 +186,15 @@ h6 {
 .about,
 .service,
 .experience,
+.contact,
+.footer {
+  position: relative;
+  z-index: 1;
+}
+
+.about,
+.service,
+.experience,
 .contact {
   padding-top: 90px;
   padding-bottom: 90px;
@@ -170,7 +204,19 @@ h6 {
   background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
 }
 
+.about .about-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .about .about-img img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 28px;
   box-shadow: 0 18px 35px rgba(15, 23, 42, 0.13);
 }
@@ -396,6 +442,18 @@ h6 {
 
 .footer-info {
   text-align: center;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 12px 0;
+}
+
+.footer-menu p {
+  margin: 0;
 }
 
 .footer-social {
