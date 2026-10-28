@@ -1,18 +1,27 @@
 (function ($) {
     "use strict";
 
-    // Prevent the browser from restoring a previous scroll position on reload.
+    // Force page to start at the top, even if the browser restores a previous scroll position.
+    function resetScrollTop() {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+        $('html, body').scrollTop(0);
+    }
+
     if (window.history && 'scrollRestoration' in window.history) {
         window.history.scrollRestoration = 'manual';
     }
 
-    // Force the page to the top on the first load and before any animation runs.
+    resetScrollTop();
+    $(function () {
+        resetScrollTop();
+        setTimeout(resetScrollTop, 0);
+        setTimeout(resetScrollTop, 50);
+        setTimeout(resetScrollTop, 200);
+    });
     $(window).on('load', function () {
-        if (window.scrollY !== 0 || document.documentElement.scrollTop !== 0) {
-            window.scrollTo(0, 0);
-            document.documentElement.scrollTop = 0;
-            document.body.scrollTop = 0;
-        }
+        resetScrollTop();
     });
 
     // loader
